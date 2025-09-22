@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Animations</title>
+
+    <link rel="stylesheet" href="style.css"> 
+</head>
+
+<body>
+    <!-- Basic Page Structure-->
+    <header>
+        <h1>Movie Showcase</h1>
+        <p>Hover, click, and explore animations!</p>
+    </header>
+
+    <!--Movie Card-->
+   <main>
+    <section class="movie-card">
+        <img src="media/nine puzzles.jpg" alt="Nine Puzzles Poster" class="poster">
+        <h2>Nine Puzzles</h2>
+        <p id="movie-desc">
+            A 2024 K-drama following a profiler who joins forces with a detective to 
+            solve a mysterious serial murder case. Each piece of the puzzle reveals 
+            hidden truths and dangerous secrets.
+        </p>
+      
+        <!--Buttons for interactions-->
+        <div class="buttons">
+            <button id="watchBtn">Watch Trailer</button>
+            <button id="surpriseBtn">Surprise Me</button>
+        </div>
+        </section>
+    </main>
+
+    <!--Part 3: Modal Popup (hidden by default)-->
+    <div class="modal" id="trailerModal">
+        <div class="modal-content">
+        <!-- Close button -->
+        <span id="closeModal" class="close">&times;</span>
+        <h3>Nine Puzzles Trailer</h3>
+        <p>
+            This is a YouTube trailer embed or teaser for nine puzzles
+            <em>Nine Puzzles</em>. 
+        </p>
+        </div>
+    </div>
+
+    <!--Extra: Floating Emoji for continuous CSS animation)-->
+    <div class="floating-emoji">🍿</div>
+
+
+
+    <script src="script.js"></script>
+</body>
+
+</html>
